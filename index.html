@@ -42,35 +42,35 @@
 
 <!-- BODY -->
 <body class="bg-img">
-  <header class="text-center">
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <header class="container text-center flow">
+    <h1 id="title" class="title">freeCodeCamp Survey Form</h1>
+    <p id="subtitle">Thank you for taking the time to help us improve the platform</p>
   </header>
 
   <main>
    
-    <div class="container bg-clr-dark">
-        <form action="#" id="survey-form">
+    <div class="container bg-dark-alpha">
+        <form action="#" id="survey-form" class="flow-extra">
 
           <!--#region : General Input -->
-          <div>
+          <div class="form-field flow">
             <label id="name-label" for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required />
           </div>
 
-          <div>
+          <div class="form-field flow">
             <label id="email-label" for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required />
           </div>
 
-          <div>
+          <div class="form-field flow">
             <label id="number-label" for="number">Age <span>(optional)</span></label>
             <input type="number" id="number" name="number" min="10" max="120" placeholder="Enter your age" />
           </div>
           <!--#endregion : General Input -->
 
           <!--#region : Dropdown  -->
-          <div>
+          <div class="form-field flow">
             <label for="dropdown">Which option best describes your current role?</label>
             <select name="dropdown" id="dropdown">
               <option value="" disabled selected>Select current role</option>
@@ -84,7 +84,7 @@
           <!--#endregion : Dropdown  -->
 
           <!--#region : Radio  -->
-          <div>
+          <div class="form-field flow">
             <p>Would you recommend freeCodeCamp to a friend?</p>
             <div>
               <input type="radio" id="definitely" name="recommend-query" value="definitely" />
@@ -102,7 +102,7 @@
           <!--#endregion : Radio  -->
 
           <!--#region : Select Favourite Feature -->
-          <div>
+          <div class="form-field flow">
             <label for="favourite-feature">What is your favourite feature of freeCodeCamp?</label>
             <select name="favourite-feature" id="favourite-feature">
               <option value="" disabled selected>Select an option</option>
@@ -115,7 +115,7 @@
           <!--#endregion : Select Favourite Feature -->
 
           <!--#region : Checkbox -->
-          <div>
+          <div class="form-field flow">
             <div>
               <input type="checkbox" name="prefer" id="front-end-projects" value="front-end-projects" />
               <label for="prefer">Front-end Projects</label>
@@ -152,7 +152,7 @@
           <!--#endregion: Checkbox -->
         
           <!--#region : Text Area -->
-          <div>
+          <div class="form-field flow">
             <label for="comments"></label>
             <textarea name="comments" id="comments"  placeholder="Enter your comment ... "></textarea>
           </div>

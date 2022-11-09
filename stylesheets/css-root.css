@@ -16,12 +16,26 @@
     --clr-white: #FDFDFD;
 
     /* FONT */
+    --fs-1: 2rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.2rem;
+    --fs-4: 1rem;
+    --fs-5: .8rem;
+    --fs-6: .6rem;
+
+    --fw-thin: 100;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+
     --fontfamily-default: 'Sora', Helvetica, Arial, sans-serif;
     --fontweight-default: 400;
     --fontsize-default: 1rem;
 
     /* Spacing */
-    --flow-spacing: 1em;
+    --flow-spacing: .5em;
+    --flow-extra: 1.5em;
 
     /* --sm-breakpoint: 576px;
     --md-breakpoint: 768px;
