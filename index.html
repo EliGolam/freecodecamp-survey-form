@@ -88,16 +88,16 @@
             <div class="form-field flow">
               <p>Would you recommend freeCodeCamp to a friend?</p>
               <div>
-                <input type="radio" id="definitely" name="recommend-query" value="definitely" checked class="radio-field" />
-                <label for="definitely" class="radio-label">Definitely</label>
+                <input type="radio" id="definitely" name="recommend-query" value="definitely" checked class="check-field" />
+                <label for="definitely" class="check-label">Definitely</label>
               </div>
               <div>
-                <input type="radio" id="maybe" name="recommend-query" value="maybe" class="radio-field" />
-                <label for="maybe" class="radio-label">Maybe</label>
+                <input type="radio" id="maybe" name="recommend-query" value="maybe" class="check-field" />
+                <label for="maybe" class="check-label">Maybe</label>
               </div>
               <div>
-                <input type="radio" id="negative" name="recommend-query" value="negative" class="radio-field" />
-                <label for="negative" class="radio-label">No</label>   
+                <input type="radio" id="negative" name="recommend-query" value="negative" class="check-field" />
+                <label for="negative" class="check-label">No</label>   
               </div>
             </div>
             <!--#endregion : Radio  -->
@@ -118,36 +118,36 @@
             <!--#region : Checkbox -->
             <div class="form-field flow">
               <div>
-                <input type="checkbox" name="prefer" id="front-end-projects" value="front-end-projects" />
-                <label for="prefer">Front-end Projects</label>
+                <input type="checkbox" name="prefer" id="front-end-projects" value="front-end-projects" class="check-field" />
+                <label for="prefer" class="check-label">Front-end Projects</label>
               </div>
               <div>
-                <input type="checkbox" name="prefer" id="back-end-projects" value="back-end-projects" />
-                <label for="prefer">Back-end Projects</label>
+                <input type="checkbox" name="prefer" id="back-end-projects" value="back-end-projects" class="check-field" />
+                <label for="prefer" class="check-label">Back-end Projects</label>
               </div>
               <div>
-                <input type="checkbox" name="prefer" id="data-visualization" value="data-visualization" />
-                <label for="prefer">Data Visualization</label>
+                <input type="checkbox" name="prefer" id="data-visualization" value="data-visualization" class="check-field" />
+                <label for="prefer" class="check-label">Data Visualization</label>
               </div>
               <div>
-                <input type="checkbox" name="prefer" id="challenges" value="challenges" />
-                <label for="prefer">Challenges</label>
+                <input type="checkbox" name="prefer" id="challenges" value="challenges" class="check-field" />
+                <label for="prefer" class="check-label">Challenges</label>
               </div>
               <div>
-                <input type="checkbox" name="prefer" id="open-source-community" value="open-source-community" />
-                <label for="prefer">Open Source Community</label>
+                <input type="checkbox" name="prefer" id="open-source-community" value="open-source-community" class="check-field" />
+                <label for="prefer" class="check-label">Open Source Community</label>
               </div>
               <div>
-                <input type="checkbox" name="prefer" id="gitter-help-rooms" value="gitter-help-rooms" />
-                <label for="prefer">Gitter Help Rooms</label>
+                <input type="checkbox" name="prefer" id="gitter-help-rooms" value="gitter-help-rooms" class="check-field" />
+                <label for="prefer" class="check-label">Gitter Help Rooms</label>
               </div>
               <div>
-                <input type="checkbox" name="prefer" id="videos" value="videos" />
-                <label for="prefer">Videos</label>
+                <input type="checkbox" name="prefer" id="videos" value="videos" class="check-field" />
+                <label for="prefer" class="check-label">Videos</label>
               </div>
               <div>
-                <input type="checkbox" name="prefer" id="city-meetups" value="city-meetups" />
-                <label for="prefer">City Meetups</label>
+                <input type="checkbox" name="prefer" id="city-meetups" value="city-meetups" class="check-field" />
+                <label for="prefer" class="check-label">City Meetups</label>
               </div>
             </div>
             <!--#endregion: Checkbox -->
@@ -155,11 +155,11 @@
             <!--#region : Text Area -->
             <div class="form-field flow">
               <label for="comments"></label>
-              <textarea name="comments" id="comments"  placeholder="Enter your comment ... "></textarea>
+              <textarea name="comments" id="comments" class="form-textarea" rows="5" placeholder="Enter your comment ... "></textarea>
             </div>
             <!--#endregion : Text Area -->
           
-            <button type="submit">Submit</button>
+            <button type="submit" class="form-submit">Submit</button>
           
         </form>
       </div>

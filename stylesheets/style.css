@@ -79,7 +79,7 @@ body {
 }
 
 .input-field {
-  padding: .6em 1em;
+  padding: var(--inp-field-padding);
   border: none;
   border-radius: .3em;
 }
@@ -92,17 +92,29 @@ body {
   opacity: .1;
 }
 
-.radio-label {
+.check-label {
   vertical-align: middle;
+  margin-left: .3em;
 }
 
-.radio-field {
+.check-field {
   width: 1.3rem;
   aspect-ratio: 1 / 1;
   vertical-align: middle;
 }
 
+.form-textarea {
+  padding: var(--inp-field-padding);
+}
 
+.form-submit {
+  width: 100%;
+  border: none;
+
+  padding: .7em;
+  background-color: var(--clr-accent);
+  color: var(--clr-white);
+}
 /*#endregion BLOCKS: component specific rules */
 /* --------------------------------------------------------------------------------- */
 
