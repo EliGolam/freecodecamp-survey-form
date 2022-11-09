@@ -8,6 +8,7 @@
     /* Color Schemes */
     --clr-dark-blue: rgb(33, 33, 87);
     --clr-dark-blue-alpha: rgba(33, 33, 87, .75);
+    --clr-dark-purple-alpha: rgba(33, 33, 87, .6);
     --clr-accent: rgb(55, 175, 101);
   
     --clr-dark-grey: #282828;

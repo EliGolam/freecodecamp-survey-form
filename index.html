@@ -42,127 +42,129 @@
 
 <!-- BODY -->
 <body class="bg-img">
-  <header class="container text-center flow">
-    <h1 id="title" class="title">freeCodeCamp Survey Form</h1>
-    <p id="subtitle">Thank you for taking the time to help us improve the platform</p>
-  </header>
+  <div class="bg-overlay wrapper">
+    <header class="container text-center flow">
+      <h1 id="title" class="title">freeCodeCamp Survey Form</h1>
+      <p id="subtitle">Thank you for taking the time to help us improve the platform</p>
+    </header>
 
-  <main>
-   
-    <div class="container bg-dark-alpha">
-        <form action="#" id="survey-form" class="flow-extra">
-
-          <!--#region : General Input -->
-          <div class="form-field flow">
-            <label id="name-label" for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required />
-          </div>
-
-          <div class="form-field flow">
-            <label id="email-label" for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required />
-          </div>
-
-          <div class="form-field flow">
-            <label id="number-label" for="number">Age <span>(optional)</span></label>
-            <input type="number" id="number" name="number" min="10" max="120" placeholder="Enter your age" />
-          </div>
-          <!--#endregion : General Input -->
-
-          <!--#region : Dropdown  -->
-          <div class="form-field flow">
-            <label for="dropdown">Which option best describes your current role?</label>
-            <select name="dropdown" id="dropdown">
-              <option value="" disabled selected>Select current role</option>
-              <option value="student">Student</option>
-              <option value="job">Full Time Job</option>
-              <option value="learner">Full Time Learner</option>
-              <option value="preferNo">Prefer not to say</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <!--#endregion : Dropdown  -->
-
-          <!--#region : Radio  -->
-          <div class="form-field flow">
-            <p>Would you recommend freeCodeCamp to a friend?</p>
-            <div>
-              <input type="radio" id="definitely" name="recommend-query" value="definitely" />
-              <label for="definitely">Definitely</label>
-            </div>
-            <div>
-              <input type="radio" id="maybe" name="recommend-query" value="maybe" />
-              <label for="maybe">Maybe</label>
-            </div>
-            <div>
-              <input type="radio" id="negative" name="recommend-query" value="negative" />
-              <label for="negative">No</label>   
-            </div>
-          </div>
-          <!--#endregion : Radio  -->
-
-          <!--#region : Select Favourite Feature -->
-          <div class="form-field flow">
-            <label for="favourite-feature">What is your favourite feature of freeCodeCamp?</label>
-            <select name="favourite-feature" id="favourite-feature">
-              <option value="" disabled selected>Select an option</option>
-              <option value="challenges">Challenges</option>
-              <option value="projects">Projects</option>
-              <option value="community">Community</option>
-              <option value="openSource">Open Source</option>
-            </select>
-          </div>
-          <!--#endregion : Select Favourite Feature -->
-
-          <!--#region : Checkbox -->
-          <div class="form-field flow">
-            <div>
-              <input type="checkbox" name="prefer" id="front-end-projects" value="front-end-projects" />
-              <label for="prefer">Front-end Projects</label>
-            </div>
-            <div>
-              <input type="checkbox" name="prefer" id="back-end-projects" value="back-end-projects" />
-              <label for="prefer">Back-end Projects</label>
-            </div>
-            <div>
-              <input type="checkbox" name="prefer" id="data-visualization" value="data-visualization" />
-              <label for="prefer">Data Visualization</label>
-            </div>
-            <div>
-              <input type="checkbox" name="prefer" id="challenges" value="challenges" />
-              <label for="prefer">Challenges</label>
-            </div>
-            <div>
-              <input type="checkbox" name="prefer" id="open-source-community" value="open-source-community" />
-              <label for="prefer">Open Source Community</label>
-            </div>
-            <div>
-              <input type="checkbox" name="prefer" id="gitter-help-rooms" value="gitter-help-rooms" />
-              <label for="prefer">Gitter Help Rooms</label>
-            </div>
-            <div>
-              <input type="checkbox" name="prefer" id="videos" value="videos" />
-              <label for="prefer">Videos</label>
-            </div>
-            <div>
-              <input type="checkbox" name="prefer" id="city-meetups" value="city-meetups" />
-              <label for="prefer">City Meetups</label>
-            </div>
-          </div>
-          <!--#endregion: Checkbox -->
-        
-          <!--#region : Text Area -->
-          <div class="form-field flow">
-            <label for="comments"></label>
-            <textarea name="comments" id="comments"  placeholder="Enter your comment ... "></textarea>
-          </div>
-          <!--#endregion : Text Area -->
-        
-          <button type="submit">Submit</button>
-        
-      </form>
-    </div>
+    <main>
     
-  </main>
+      <div class="container bg-dark-alpha">
+          <form action="#" id="survey-form" class="flow-extra">
+
+            <!--#region : General Input -->
+            <div class="form-field flow">
+              <label id="name-label" for="name">Name</label>
+              <input type="text" id="name" name="name" class="input-field" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-field flow">
+              <label id="email-label" for="email">Email</label>
+              <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-field flow">
+              <label id="number-label" for="number">Age <span>(optional)</span></label>
+              <input type="number" id="number" name="number" class="input-field" min="10" max="120" placeholder="Enter your age" />
+            </div>
+            <!--#endregion : General Input -->
+
+            <!--#region : Dropdown  -->
+            <div class="form-field flow">
+              <label for="dropdown">Which option best describes your current role?</label>
+              <select name="dropdown" id="dropdown" class="dropdown input-field">
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <!--#endregion : Dropdown  -->
+
+            <!--#region : Radio  -->
+            <div class="form-field flow">
+              <p>Would you recommend freeCodeCamp to a friend?</p>
+              <div>
+                <input type="radio" id="definitely" name="recommend-query" value="definitely" checked class="radio-field" />
+                <label for="definitely" class="radio-label">Definitely</label>
+              </div>
+              <div>
+                <input type="radio" id="maybe" name="recommend-query" value="maybe" class="radio-field" />
+                <label for="maybe" class="radio-label">Maybe</label>
+              </div>
+              <div>
+                <input type="radio" id="negative" name="recommend-query" value="negative" class="radio-field" />
+                <label for="negative" class="radio-label">No</label>   
+              </div>
+            </div>
+            <!--#endregion : Radio  -->
+
+            <!--#region : Select Favourite Feature -->
+            <div class="form-field flow">
+              <label for="favourite-feature">What is your favourite feature of freeCodeCamp?</label>
+              <select name="favourite-feature" id="favourite-feature" class="dropdown input-field">
+                <option value="" disabled selected>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="openSource">Open Source</option>
+              </select>
+            </div>
+            <!--#endregion : Select Favourite Feature -->
+
+            <!--#region : Checkbox -->
+            <div class="form-field flow">
+              <div>
+                <input type="checkbox" name="prefer" id="front-end-projects" value="front-end-projects" />
+                <label for="prefer">Front-end Projects</label>
+              </div>
+              <div>
+                <input type="checkbox" name="prefer" id="back-end-projects" value="back-end-projects" />
+                <label for="prefer">Back-end Projects</label>
+              </div>
+              <div>
+                <input type="checkbox" name="prefer" id="data-visualization" value="data-visualization" />
+                <label for="prefer">Data Visualization</label>
+              </div>
+              <div>
+                <input type="checkbox" name="prefer" id="challenges" value="challenges" />
+                <label for="prefer">Challenges</label>
+              </div>
+              <div>
+                <input type="checkbox" name="prefer" id="open-source-community" value="open-source-community" />
+                <label for="prefer">Open Source Community</label>
+              </div>
+              <div>
+                <input type="checkbox" name="prefer" id="gitter-help-rooms" value="gitter-help-rooms" />
+                <label for="prefer">Gitter Help Rooms</label>
+              </div>
+              <div>
+                <input type="checkbox" name="prefer" id="videos" value="videos" />
+                <label for="prefer">Videos</label>
+              </div>
+              <div>
+                <input type="checkbox" name="prefer" id="city-meetups" value="city-meetups" />
+                <label for="prefer">City Meetups</label>
+              </div>
+            </div>
+            <!--#endregion: Checkbox -->
+          
+            <!--#region : Text Area -->
+            <div class="form-field flow">
+              <label for="comments"></label>
+              <textarea name="comments" id="comments"  placeholder="Enter your comment ... "></textarea>
+            </div>
+            <!--#endregion : Text Area -->
+          
+            <button type="submit">Submit</button>
+          
+        </form>
+      </div>
+      
+    </main>
+  </div>
 </body>
 </html>

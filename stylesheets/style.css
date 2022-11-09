@@ -1,10 +1,9 @@
 /* --------------------------------------------------------------------------------- */
 /*#region GENERAL DEFAULTS  */
 body {
-    font: var(--fontweight-default) var(--fontsize-default) var(--fontfamily-default);
-    color: var(--clr-white);
-    padding: .6rem 0;
-    min-height: 100vh;
+  font: var(--fontweight-default) var(--fontsize-default) var(--fontfamily-default);
+  color: var(--clr-white);
+  min-height: 100vh;
 }
 
 .bg-img {
@@ -12,6 +11,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.wrapper {
+  padding: .6rem 0 3rem 0;
+}
+
+.bg-overlay {
+  background-color: var(--clr-dark-purple-alpha);
 }
 /*#endregion GENERAL DEFAULTS  */
 /* --------------------------------------------------------------------------------- */
@@ -71,7 +78,29 @@ body {
   flex-direction: column;
 }
 
+.input-field {
+  padding: .6em 1em;
+  border: none;
+  border-radius: .3em;
+}
 
+.input-field::placeholder {
+  opacity: .3;
+}
+
+.dropdown > option:disabled {
+  opacity: .1;
+}
+
+.radio-label {
+  vertical-align: middle;
+}
+
+.radio-field {
+  width: 1.3rem;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+}
 
 
 /*#endregion BLOCKS: component specific rules */
