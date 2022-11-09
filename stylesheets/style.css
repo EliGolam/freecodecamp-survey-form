@@ -2,7 +2,8 @@
 /*#region GENERAL DEFAULTS  */
 body {
     font: var(--fontweight-default) var(--fontsize-default) var(--fontfamily-default);
-    color: var(--clr-dark-grey);
+    color: var(--clr-white);
+    min-height: 100vh;
 }
 /*#endregion GENERAL DEFAULTS  */
 /* --------------------------------------------------------------------------------- */
@@ -40,7 +41,12 @@ body {
 
 /* --------------------------------------------------------------------------------- */
 /*#region BLOCKS: component specific rules */
-
+.bg-img {
+  background-image: url('/img/bg-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 
 /*#endregion BLOCKS: component specific rules */
